@@ -1,4 +1,4 @@
-# ntfy.sh HomeAssistant Notifications
+# ntfy.sh Home Assistant Notifications
 
 The `ntfy.sh` notification platform enables you to easily send notifications with a custom prioirty and extra information via [ntfy.sh](https://ntfy.sh).
 
