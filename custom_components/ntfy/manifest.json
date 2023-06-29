@@ -1,0 +1,12 @@
+{
+  "domain": "ntfy",
+  "name": "ntfy.sh Notifications",
+  "documentation": "https://github.com/ivanmihov/homeassistant-ntfy.sh",
+  "issue_tracker": "https://github.com/ivanmihov/homeassistant-ntfy.sh/issues",
+  "dependencies": [],
+  "codeowners": ["@ivanmihov"],
+  "requirements": [],
+  "integration_type": "service",
+  "iot_class": "local_push",
+  "version": "2023.6.1"
+}
