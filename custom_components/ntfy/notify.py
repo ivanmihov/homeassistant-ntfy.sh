@@ -68,16 +68,20 @@ class HassAgentNotificationService(BaseNotificationService):
         icon = data.get('icon') or self._icon or ""
 
         payload = {
-            'topic': topic,
-            'message': message,
-            'title': title,
-            'tags': data.get('tags', []),
-            'priority': data.get('priority', 3),
-            'attach': data.get('attach', "") or data.get('image', ""),
-            'filename': data.get('filename', ""),
-            'click': data.get('click', "") or data.get('click_url', ""),
-            'actions': data.get('actions', []),
-            'icon': icon,
+            "topic": topic,
+            "message": message,
+            "title": title,
+            "tags": data.get("tags", []),
+            "priority": data.get("priority", 3),
+            "attach": data.get("attach", "") or data.get("image", ""),
+            "filename": data.get("filename", ""),
+            "click": data.get("click", "") or data.get("click_url", ""),
+            "actions": data.get("actions", []),
+            "icon": icon,
+            "markdown": "markdown" in data,
+            "delay": data.get("delay", ""),
+            "email": data.get("email", ""),
+            "call": data.get("call", ""),
         }
 
         _LOGGER.debug('Sending message to ntfy.sh: %s', payload)
