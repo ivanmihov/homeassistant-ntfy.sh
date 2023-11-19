@@ -81,6 +81,10 @@ action:
         click: https://www.home-assistant.io/
         actions: [list_of_actions]
         icon: https://placekitten.com/400/300
+        delay: 10s
+        markdown: True
+        call: "+324793245"
+        email: "support@home-assistant.io"
 ```
 
 ### License
