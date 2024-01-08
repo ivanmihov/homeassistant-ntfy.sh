@@ -1,10 +1,10 @@
 # ntfy.sh Home Assistant Notifications
 
-The `ntfy.sh` notification platform enables you to easily send notifications with a custom prioirty and extra information via [ntfy.sh](https://ntfy.sh).
+The `ntfy.sh` notification platform enables you to easily send notifications with custom priorities and extra information via [ntfy.sh](https://ntfy.sh).
 
 ### Installation
 The recommended way to install the integration is via [HACS](https://hacs.xyz/). Add this repository to HACS custom integration repositories and install.
-If you want to install it manually download the repository as zip and extract it to the `<config_dir>/custom_components/` directory of HomeAssistant.
+If you want to install it manually download the repository as zip and extract it to the `<config_dir>/custom_components/` directory of Home Assistant.
 
 ### Configuration
 This integration exposes itself as a [notifications integration](https://www.home-assistant.io/integrations/notify/) and configured by adding the folowing snippet to the `configuration.yaml` file:
@@ -20,7 +20,7 @@ notify:
 Replace `<ntfy.sh_url>`, `<ntfy.sh_token>`, `<ntfy.sh_topic>`, and `<notification_icon_url>` with the url, optional token, optional topic, and optional icon url for your ntfy.sh instance. Token is optional if your instance does not require authentication. Topic is also optional and will default to `homeassistant` if not specified. Topics in the automations have higher priority.
 
 ### Usage
-This integration accepts the same values as the official ntfy.sh API. For a full list of options that can be added to a notification refer to the [ntfy.sh docs](https://docs.ntfy.sh/publish/#publish-as-json). Here a few examples:
+This integration accepts the same values as the official ntfy.sh API. For a full list of options that can be added to a notification, refer to the [ntfy.sh docs](https://docs.ntfy.sh/publish/#publish-as-json). Here are a few examples:
 
 #### Simple text message
 ```yaml
@@ -84,4 +84,4 @@ action:
 ```
 
 ### License
-The whole project is under the [GPL-3 license](https://www.gnu.org/licenses/gpl-3.0.html).
+The whole project is licensed under the [GPL-3 license](https://www.gnu.org/licenses/gpl-3.0.html).
