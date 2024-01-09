@@ -17,7 +17,7 @@ notify:
     topic: <ntfy.sh_topic>
     icon: <notification_icon_url>
 ```
-Replace `<ntfy.sh_url>`, `<ntfy.sh_token>`, `<ntfy.sh_topic>`, and `<notification_icon_url>` with the url, optional token, optional topic, and optional icon url for your ntfy.sh instance. Token is optional if your instance does not require authentication. Topic is also optional and will default to `homeassistant` if not specified. Topics in the automations have higher priority.
+Replace `<ntfy.sh_url>`, `<ntfy.sh_token>`, `<ntfy.sh_topic>`, and `<notification_icon_url>` with the url (e.g., `https://ntfy.sh`), optional token, optional topic, and optional icon url for your ntfy.sh instance. Token is optional if your instance does not require authentication. Topic is also optional and will default to `homeassistant` if not specified. Topics in the automations have higher priority.
 
 ### Usage
 This integration accepts the same values as the official ntfy.sh API. For a full list of options that can be added to a notification, refer to the [ntfy.sh docs](https://docs.ntfy.sh/publish/#publish-as-json). Here are a few examples:
